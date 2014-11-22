@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF243321A20C9200070369A /* QueryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A9B697195374AA0016654E /* QueryKit.swift */; };
+		1FF243331A20C9230070369A /* QuerySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E3A05C1969C019009372A8 /* QuerySet.swift */; };
+		1FF243341A20C9260070369A /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8728019539C0900A6F13F /* Attribute.swift */; };
+		1FF243351A20C9290070369A /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E3A0601969DDF5009372A8 /* Expression.swift */; };
+		1FF243361A20C92B0070369A /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8728619539FD200A6F13F /* Predicate.swift */; };
+		1FF243371A20C92F0070369A /* QKAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B17B8419A94C9100D6540D /* QKAttribute.m */; };
+		1FF243381A20C93C0070369A /* QKQuerySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007D7F19A95CE9007DC2BC /* QKQuerySet.m */; };
+		1FF243391A20C9400070369A /* QKQuerySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77007D8019A95CE9007DC2BC /* QKQuerySet.swift */; };
+		1FF2433A1A20C9430070369A /* QKAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B17B8719A94D2C00D6540D /* QKAttribute.swift */; };
+		1FF2433B1A20C9E20070369A /* QueryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A9B67E195374490016654E /* QueryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF2433C1A20C9E80070369A /* QKAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B17B8319A94C9100D6540D /* QKAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF2433D1A20C9EC0070369A /* QKQuerySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 77007D7E19A95CE9007DC2BC /* QKQuerySet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77007D7D19A95CDE007DC2BC /* QKQuerySetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77007D7C19A95CDE007DC2BC /* QKQuerySetTests.swift */; };
 		77007D8119A95CE9007DC2BC /* QKQuerySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 77007D7E19A95CE9007DC2BC /* QKQuerySet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77007D8219A95CE9007DC2BC /* QKQuerySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007D7F19A95CE9007DC2BC /* QKQuerySet.m */; };
@@ -62,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FF243191A20C87A0070369A /* QueryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QueryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77007D7C19A95CDE007DC2BC /* QKQuerySetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKQuerySetTests.swift; sourceTree = "<group>"; };
 		77007D7E19A95CE9007DC2BC /* QKQuerySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKQuerySet.h; sourceTree = "<group>"; };
 		77007D7F19A95CE9007DC2BC /* QKQuerySet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKQuerySet.m; sourceTree = "<group>"; };
@@ -90,6 +103,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1FF243151A20C87A0070369A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77A9B675195374490016654E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,6 +142,7 @@
 			children = (
 				77A9B679195374490016654E /* QueryKit.framework */,
 				77A9B684195374490016654E /* QueryKitTests.xctest */,
+				1FF243191A20C87A0070369A /* QueryKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +219,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1FF243161A20C87A0070369A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF2433B1A20C9E20070369A /* QueryKit.h in Headers */,
+				1FF2433C1A20C9E80070369A /* QKAttribute.h in Headers */,
+				1FF2433D1A20C9EC0070369A /* QKQuerySet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77A9B676195374490016654E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +242,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1FF243181A20C87A0070369A /* QueryKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF243301A20C87A0070369A /* Build configuration list for PBXNativeTarget "QueryKit-iOS" */;
+			buildPhases = (
+				1FF243141A20C87A0070369A /* Sources */,
+				1FF243151A20C87A0070369A /* Frameworks */,
+				1FF243161A20C87A0070369A /* Headers */,
+				1FF243171A20C87A0070369A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QueryKit-iOS";
+			productName = "QueryKit-iOS";
+			productReference = 1FF243191A20C87A0070369A /* QueryKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		77A9B678195374490016654E /* QueryKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77A9B68D195374490016654E /* Build configuration list for PBXNativeTarget "QueryKit" */;
@@ -258,6 +307,9 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 				TargetAttributes = {
+					1FF243181A20C87A0070369A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					77A9B678195374490016654E = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -281,11 +333,19 @@
 			targets = (
 				77A9B678195374490016654E /* QueryKit */,
 				77A9B683195374490016654E /* QueryKitTests */,
+				1FF243181A20C87A0070369A /* QueryKit-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1FF243171A20C87A0070369A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77A9B677195374490016654E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +363,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1FF243141A20C87A0070369A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF243341A20C9260070369A /* Attribute.swift in Sources */,
+				1FF243391A20C9400070369A /* QKQuerySet.swift in Sources */,
+				1FF243321A20C9200070369A /* QueryKit.swift in Sources */,
+				1FF243381A20C93C0070369A /* QKQuerySet.m in Sources */,
+				1FF243371A20C92F0070369A /* QKAttribute.m in Sources */,
+				1FF2433A1A20C9430070369A /* QKAttribute.swift in Sources */,
+				1FF243361A20C92B0070369A /* Predicate.swift in Sources */,
+				1FF243331A20C9230070369A /* QuerySet.swift in Sources */,
+				1FF243351A20C9290070369A /* Expression.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77A9B674195374490016654E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +436,109 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1FF2432C1A20C87A0070369A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = QueryKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = QueryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1FF2432D1A20C87A0070369A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = QueryKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QueryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		77A9B6721953742F0016654E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -573,6 +752,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1FF243301A20C87A0070369A /* Build configuration list for PBXNativeTarget "QueryKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF2432C1A20C87A0070369A /* Debug */,
+				1FF2432D1A20C87A0070369A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		77A9B6711953742F0016654E /* Build configuration list for PBXProject "QueryKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
